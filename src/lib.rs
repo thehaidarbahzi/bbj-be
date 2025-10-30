@@ -28,7 +28,7 @@ pub async fn run() -> std::io::Result<()> {
             .service(web::scope("/v1").configure(config))
             .default_service(web::route().to(not_found))
     })
-        .bind(("127.0.0.1", 8080))?
+        .bind(("0.0.0.0", 8080))?
         .run().await
 }
 

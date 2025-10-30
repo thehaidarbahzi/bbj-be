@@ -2,3 +2,5 @@
 Cargo.lock
 .env
 diesel.toml
+docker-compose.yml
+dockerfile
